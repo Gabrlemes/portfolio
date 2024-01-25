@@ -12,6 +12,9 @@ body {
     color: #ededed;
 }
 
+*{
+@media (max-width: 450px) }
+
 .header{
     position: fixed;
     top: 0;
@@ -203,6 +206,8 @@ body {
     width: 100%;
 }
 
+/*links redes sociais*/
+
 .home-sci {
     position: absolute;
     bottom: 40px;
@@ -253,7 +258,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #00abf0;
+    /*background: #00abf0;*/
     z-index: -1;
     transition: .5s;
 }
@@ -268,30 +273,25 @@ body {
     right: 30px;
     width: 500px;
     height: 100%;
-    background-position: 100% transparent;
+    background-position: 100% center;
     transition: 3s;
     animation: manipActiveHover .1s forwards;
     animation-delay: 4s;
     pointer-events: none;
 }
 
-.home-imgHover:hover {
-    background: #081b29;
-    opacity: .8;
-}
-
-.home-imgHover::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 120%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 3s;
-    z-index: 100;
-}
+/*.home-imgHover::after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    width: 120%;*/
+/*    height: 100%;*/
+/*    background: #081b29;*/
+/*    animation: showRight 1s ease forwards;*/
+/*    animation-delay: 3s;*/
+/*    z-index: 100;*/
+/*}*/
 
 /* KEYFRAMES ANIMATION */
 @keyframes showRight {
